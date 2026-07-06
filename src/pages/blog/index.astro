@@ -8,10 +8,10 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
 );
 ---
 
-<BaseLayout title="Blog · All Posts" description="All blog posts">
+<BaseLayout title="博客 · 全部文章" description="所有文章列表">
   <section>
-    <h1 class="mb-8 text-3xl font-bold tracking-tight">All posts</h1>
-    <p class="mb-8 text-gray-600">{posts.length} posts</p>
+    <h1 class="mb-8 text-3xl font-bold tracking-tight">全部文章</h1>
+    <p class="mb-8 text-gray-600">共 {posts.length} 篇</p>
 
     {posts.map((post) => <PostCard entry={post} />)}
   </section>

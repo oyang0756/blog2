@@ -1,13 +1,13 @@
 ---
-title: 'Hello, World'
-description: 'The first post on this blog — a quick tour of what this site is and how it works.'
+title: '你好,世界'
+description: '这是新博客的第一篇文章 —— 简单介绍本站与技术栈。'
 date: 2026-07-02
 tags: ['随笔', 'meta']
 categories: ['生活']
 draft: false
 ---
 
-# Hello, World
+# 你好,世界
 
 这是我新博客的第一篇文章。
 
@@ -15,7 +15,7 @@ draft: false
 
 - 基于 **Astro** 构建 —— 现代、极快、几乎零 JS。
 - 文章用 Markdown / MDX 写,源文件在 Git 里,版本可追溯。
-- 部署目标待定(GitHub Pages / Vercel / 自建)。
+- 部署目标:GitHub Pages,自动通过 Actions 部署。
 
 ## 文章命名约定
 

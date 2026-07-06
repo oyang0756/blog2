@@ -4,18 +4,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
-<BaseLayout title="Blog">
+<BaseLayout title="博客">
   <section class="mb-12">
-    <h1 class="mb-2 text-4xl font-bold tracking-tight">Hi, I'm a blogger.</h1>
+    <h1 class="mb-2 text-4xl font-bold tracking-tight">你好,欢迎来到我的博客。</h1>
     <p class="text-gray-600">
-      Welcome to my blog. I write about tech, life, and everything in between.
+      这里记录技术、生活,以及一切有意思的事情。
     </p>
   </section>
 
   <section>
-    <h2 class="mb-6 text-2xl font-semibold">Latest posts</h2>
+    <h2 class="mb-6 text-2xl font-semibold">最新文章</h2>
     <p class="text-gray-600">
-      Go to <a href={`${base}/blog`}>/blog</a> to see all posts.
+      前往 <a href={`${base}/blog`}>/blog</a> 查看全部文章。
     </p>
   </section>
 </BaseLayout>

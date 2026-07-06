@@ -11,7 +11,7 @@ interface Props {
 
 const {
   title,
-  description = 'A personal blog about tech, life, and everything in between.',
+  description = '一个关于技术、生活与一切的私人博客。',
   image = '/og-default.png',
 } = Astro.props;
 
@@ -20,7 +20,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -35,12 +35,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link
       rel="alternate"
       type="application/rss+xml"
-      title="Blog RSS"
+      title="博客 RSS"
       href={new URL('rss.xml', Astro.site)}
     />
   </head>
   <body>
-    <Header title="Blog" description={description} />
+    <Header title="博客" description={description} />
     <main>
       <slot />
     </main>
